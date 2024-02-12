@@ -6,7 +6,7 @@ const Navbar = ({ tab = 'HOME' }) => {
   const navItems = ['HOME', 'CONTACT US', 'BLOG', 'PORTFOLIO'];
   return (
     <>
-      <div className="grid grid-cols-3 justify-between items-center px-5 py-4">
+      <div className="grid grid-cols-3 justify-between items-center">
         <div>
           <a href="">
             <img
