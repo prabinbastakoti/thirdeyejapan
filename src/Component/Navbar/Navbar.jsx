@@ -8,10 +8,16 @@ const Navbar = ({ tab = 'HOME' }) => {
     <>
       <div className="grid grid-cols-3 justify-between items-center px-5 py-4">
         <div>
-          <img src={Logo} alt="ThirdEyeJapan" className="h-[120px] w-[120px]" />
+          <a href="">
+            <img
+              src={Logo}
+              alt="ThirdEyeJapan"
+              className="h-[120px] w-[120px]"
+            />
+          </a>
         </div>
         <div className="">
-          <ul className="flex flex-row justify-between items-center gap-10">
+          <ul className="flex flex-row justify-between items-center">
             {navItems.map((item, index) => {
               return (
                 <li
@@ -29,19 +35,19 @@ const Navbar = ({ tab = 'HOME' }) => {
         <div className="flex flex-row justify-end items-center gap-6 pr-14">
           <div className="flex flex-row justify-between items-center gap-5">
             <a href="https://www.facebook.com/TEECPL" target="_blank">
-              <FaFacebook className="text-[#1877f2] w-5 h-5 cursor-pointer" />
+              <FaFacebook className="text-[#1877f2] w-5 h-5" />
             </a>
             <a
               href="https://www.instagram.com/thirdeyeeducationalcenter/"
               target="_blank"
             >
-              <FaInstagram className="text-[#e1306c] w-5 h-5 cursor-pointer" />
+              <FaInstagram className="text-[#e1306c] w-5 h-5" />
             </a>
             <a
               href="https://www.youtube.com/@thirdeyeeducationalcenterp747"
               target="_blank"
             >
-              <FaYoutube className="text-[#ff0000] w-5 h-5 cursor-pointer" />
+              <FaYoutube className="text-[#ff0000] w-5 h-5" />
             </a>
           </div>
           <div className="text-[#dad2c7]">|</div>
