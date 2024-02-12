@@ -1,7 +1,11 @@
-// import function to register Swiper custom elements
-import { register } from 'swiper/element/bundle';
-// register Swiper custom elements
-register();
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 import slide1 from '../../assets/1.jpg';
 import slide2 from '../../assets/2.jpg';
@@ -11,32 +15,44 @@ import slide5 from '../../assets/5.jpg';
 import slide6 from '../../assets/6.jpg';
 import slide7 from '../../assets/7.jpg';
 
-const Body = () => {
-  return (
-    <swiper-container loop="true" speed="500" slides-per-view="3">
-      <swiper-slide>
-        <img src={slide1} />
-      </swiper-slide>
-      <swiper-slide>
-        <img src={slide2} />
-      </swiper-slide>
-      <swiper-slide>
-        <img src={slide3} />
-      </swiper-slide>
-      <swiper-slide>
-        <img src={slide4} />
-      </swiper-slide>
-      <swiper-slide>
-        <img src={slide5} />
-      </swiper-slide>
-      <swiper-slide>
-        <img src={slide6} />
-      </swiper-slide>
-      <swiper-slide>
-        <img src={slide7} />
-      </swiper-slide>
-    </swiper-container>
-  );
-};
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-export default Body;
+export default function App() {
+  return (
+    <>
+      <Swiper
+        autoplay={{
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        className="mySwiper"
+        loop="true"
+        slidesPerView={3}
+        speed={5500}
+      >
+        <SwiperSlide>
+          <img src={slide1} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide2} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide3} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide4} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide5} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide6} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide7} />
+        </SwiperSlide>
+      </Swiper>
+    </>
+  );
+}
