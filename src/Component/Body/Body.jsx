@@ -23,13 +23,14 @@ export default function App() {
     <>
       <Swiper
         autoplay={{
+          delay: 0,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
         className="mySwiper"
         loop="true"
-        slidesPerView={3}
-        speed={5500}
+        slidesPerView={4}
+        speed={3000}
       >
         <SwiperSlide>
           <img src={slide1} />
