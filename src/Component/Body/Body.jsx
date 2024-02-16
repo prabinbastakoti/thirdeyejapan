@@ -4,6 +4,7 @@ import Services from './Services';
 import FAQs from './FAQs';
 import Gallery from './Gallery';
 import SiteContent from './SiteContent';
+import Social from './Social';
 
 const Body = () => {
   return (
@@ -17,6 +18,7 @@ const Body = () => {
       <Gallery />
       <div className="px-20">
         <SiteContent />
+        <Social />
       </div>
     </div>
   );
