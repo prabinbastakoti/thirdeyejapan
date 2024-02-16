@@ -5,6 +5,7 @@ import FAQs from './FAQs';
 import Gallery from './Gallery';
 import SiteContent from './SiteContent';
 import Social from './Social';
+import Instructors from './Instructors';
 
 const Body = () => {
   return (
@@ -19,6 +20,7 @@ const Body = () => {
       <div className="px-20">
         <SiteContent />
         <Social />
+        <Instructors />
       </div>
     </div>
   );
