@@ -2,6 +2,7 @@ import SingleService from './SingleService';
 import Service1 from '../../assets/services1.webp';
 import Service2 from '../../assets/services2.webp';
 import Service3 from '../../assets/services3.webp';
+import HeadingTitle from '../HeadingTitle';
 
 const Services = () => {
   const content = [
@@ -24,10 +25,8 @@ const Services = () => {
   ];
   return (
     <>
-      <div className="flex flex-col justify-center items-center mt-24">
-        <h1 className="bg-black text-white tracking-widest text-2xl px-10 py-2 mb-20">
-          SERVICES
-        </h1>
+      <HeadingTitle title="services" />
+      <div className="flex flex-col justify-center items-center mt-16">
         <SingleService
           image={Service1}
           heading={content[0].heading}
