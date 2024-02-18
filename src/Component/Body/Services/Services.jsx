@@ -1,8 +1,8 @@
 import SingleService from './SingleService';
-import Service1 from '../../assets/services1.webp';
-import Service2 from '../../assets/services2.webp';
-import Service3 from '../../assets/services3.webp';
-import HeadingTitle from '../HeadingTitle';
+import Service1 from '../../../assets/services1.webp';
+import Service2 from '../../../assets/services2.webp';
+import Service3 from '../../../assets/services3.webp';
+import HeadingTitle from '../../HeadingTitle';
 
 const Services = () => {
   const content = [

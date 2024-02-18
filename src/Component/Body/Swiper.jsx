@@ -23,7 +23,7 @@ const SwiperComponent = () => {
       <Swiper
         autoplay={{
           delay: 0,
-          disableOnInteraction: true,
+          disableOnInteraction: false,
         }}
         modules={[Autoplay]}
         className="mySwiper"

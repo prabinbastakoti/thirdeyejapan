@@ -1,10 +1,10 @@
-import HeadingTitle from '../HeadingTitle';
-import Image1 from '../../assets/a.webp';
-import Image2 from '../../assets/b.webp';
-import Image3 from '../../assets/c.webp';
-import Image4 from '../../assets/d.webp';
-import Image5 from '../../assets/e.webp';
-import Image6 from '../../assets/f.webp';
+import HeadingTitle from '../../HeadingTitle';
+import Image1 from '../../../assets/a.webp';
+import Image2 from '../../../assets/b.webp';
+import Image3 from '../../../assets/c.webp';
+import Image4 from '../../../assets/d.webp';
+import Image5 from '../../../assets/e.webp';
+import Image6 from '../../../assets/f.webp';
 import SingleContent from './SingleContent';
 
 const SiteContent = () => {

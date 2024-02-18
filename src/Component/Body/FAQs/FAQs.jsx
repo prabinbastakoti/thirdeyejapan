@@ -1,4 +1,4 @@
-import HeadingTitle from '../HeadingTitle';
+import HeadingTitle from '../../HeadingTitle';
 import Question from './Question';
 
 const FAQs = () => {

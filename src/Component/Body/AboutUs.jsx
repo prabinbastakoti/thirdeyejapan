@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="flex flex-row justify-between items-center mt-20 gap-16">
-        <img src={About} alt="About" className="w-2/5 object-contain" />
+        <img src={About} alt="About" className="w-1/2 object-contain" />
         <div className="flex-1 flex flex-col justify-center items-center gap-6">
           <h1 className="text-3xl font-semibold tracking-wide">
             ABOUT THIRDEYE
