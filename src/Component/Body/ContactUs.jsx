@@ -39,7 +39,7 @@ const ContactUs = () => {
             <div className="flex flex-row justify-center items-center text-lg text-[#5e5e5e] gap-4">
               {!openAll ? (
                 <>
-                  <p>Open today</p>
+                  {today == 0 || today == 6 ? <p>Today</p> : <p>Open today</p>}
                   <p className="border-b-2 border-[#dad2c7]">
                     {time[today].duration}
                   </p>
