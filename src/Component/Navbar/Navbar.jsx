@@ -6,7 +6,7 @@ const Navbar = ({ tab = 'HOME' }) => {
   const navItems = ['HOME', 'CONTACT US', 'BLOG', 'PORTFOLIO'];
   return (
     <>
-      <div className="pl-4 grid grid-cols-3 justify-between items-center">
+      <div className="hidden pl-4 md:grid grid-cols-3 justify-between items-center">
         <div className="w-fit">
           <a href="">
             <img

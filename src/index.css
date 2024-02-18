@@ -2,16 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  height: 100%;
-}
-
 #app {
   height: 100%;
 }
 html,
 body {
-  position: relative;
   height: 100%;
 }
 

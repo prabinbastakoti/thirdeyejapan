@@ -20,39 +20,41 @@ import { Autoplay } from 'swiper/modules';
 const SwiperComponent = () => {
   return (
     <>
-      <Swiper
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-        className="mySwiper"
-        loop="true"
-        slidesPerView={3}
-        speed={6000}
-      >
-        <SwiperSlide>
-          <img src={slide1} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide3} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide4} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide5} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide6} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide7} />
-        </SwiperSlide>
-      </Swiper>
+      <div className="hidden md:block">
+        <Swiper
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
+          className="mySwiper"
+          loop="true"
+          slidesPerView={3}
+          speed={6000}
+        >
+          <SwiperSlide>
+            <img src={slide1} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide2} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide3} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide4} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide5} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide6} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide7} />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </>
   );
 };

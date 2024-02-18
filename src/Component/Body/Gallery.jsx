@@ -9,7 +9,7 @@ const Gallery = () => {
   const photos = [Image1, Image2, Image3, Image4, Image5, Image6];
   return (
     <>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 px-10">
         {photos.map((photo, index) => {
           return (
             <div className="overflow-hidden" key={index}>

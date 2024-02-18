@@ -36,7 +36,7 @@ const FAQs = () => {
     <>
       <div>
         <HeadingTitle title="frequently asked questions" />
-        <p className="flex flex-row justify-center items-center text-[#5e5e5e] text-lg pt-6 mb-16">
+        <p className="flex flex-row justify-center items-center text-[#5e5e5e] text-base pt-6 mb-16">
           Please contact us if you cannot find an answer to your question.
         </p>
         <div className="flex flex-col justify-center items-center gap-16">
