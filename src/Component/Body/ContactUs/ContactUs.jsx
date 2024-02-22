@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import HeadingTitle from '../HeadingTitle';
+import HeadingTitle from '../../HeadingTitle';
 import { FaCaretDown, FaCaretUp } from 'react-icons/fa';
 
 const ContactUs = () => {
