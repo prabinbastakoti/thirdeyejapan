@@ -6,7 +6,7 @@ import Gallery from './Gallery';
 import SiteContent from './SiteContent/SiteContent';
 import Social from './Social';
 import Instructors from './Instructors';
-import ContactUs from './ContactUs';
+import ContactUs from './ContactUs/ContactUs';
 
 const Body = () => {
   return (
