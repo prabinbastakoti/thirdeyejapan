@@ -6,23 +6,17 @@ const Navbar = ({ tab = 'HOME' }) => {
   const navItems = ['HOME', 'CONTACT US', 'BLOG', 'PORTFOLIO'];
   return (
     <>
-      <div className="hidden pl-4 md:grid grid-cols-3 justify-between items-center">
-        <div className="w-fit">
-          <a href="">
-            <img
-              src={Logo}
-              alt="ThirdEyeJapan"
-              className="h-[120px] w-[120px]"
-            />
-          </a>
+      <div className="w-[100%] hidden py-4 md:flex justify-between items-center relative z-10 bg-[#15104d] bg-opacity-25">
+        <div className="text-xl text-white font-extrabold tracking-wider pl-5">
+          THIRDEYEJAPAN
         </div>
-        <div className="">
-          <ul className="flex flex-row justify-between items-center">
+        <div className="flex-1 ">
+          <ul className="flex flex-row justify-center items-center gap-16">
             {navItems.map((item, index) => {
               return (
                 <li
                   key={index}
-                  className={`text-[#1b1b1b] text-lg tracking-wider cursor-pointer py-1 hover:text-[#4A4641] ${
+                  className={` text-white text-lg tracking-wider cursor-pointer py-1 hover:text-[#bfbebc] ${
                     tab === item ? 'border-b-2 border-[#dad2c7]' : 'border-none'
                   }`}
                 >
@@ -52,8 +46,8 @@ const Navbar = ({ tab = 'HOME' }) => {
           </div>
           <div className="text-[#dad2c7]">|</div>
           <div className="flex flex-row justify-between items-center gap-5">
-            <FaCartShopping className="w-5 h-5 cursor-pointer" />
-            <FaUser className="w-5 h-5 cursor-pointer" />
+            <FaCartShopping className="w-5 h-5 cursor-pointer text-white" />
+            <FaUser className="w-5 h-5 cursor-pointer text-white" />
           </div>
         </div>
       </div>

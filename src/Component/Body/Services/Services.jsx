@@ -1,7 +1,7 @@
 import SingleService from './SingleService';
-import Service1 from '../../../assets/services1.webp';
-import Service2 from '../../../assets/services2.webp';
-import Service3 from '../../../assets/services3.webp';
+import Service1 from '../../../assets/services1.jpg';
+import Service2 from '../../../assets/services2.jpg';
+import Service3 from '../../../assets/services3.jpg';
 import HeadingTitle from '../../HeadingTitle';
 
 const Services = () => {

@@ -87,7 +87,7 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="flex flex-row justify-center mt-10 pb-10 border-b">
-            <button className="bg-[#d8d0c5] px-12 py-6 text-xl font-medium tracking-widest border-b-8 border-[#b1a99e]">
+            <button className="bg-[#15104d] px-12 py-6 text-xl font-medium tracking-widest border-b-8 border-[#0f0c31] text-white">
               DROP US A LINE!
             </button>
           </div>
@@ -100,12 +100,6 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* CONTACT US FORM */}
-
-      <div>
-        <h1>Drop us a line!</h1>
       </div>
     </>
   );
