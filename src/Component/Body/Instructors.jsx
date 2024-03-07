@@ -33,7 +33,7 @@ const Instructors = () => {
               Sanjog Pudasaini
             </h1>
             <img
-              src={Instructor2}
+              src={Instructor1}
               alt="Sanjog Pudasaini"
               className="shadow-2xl"
             />

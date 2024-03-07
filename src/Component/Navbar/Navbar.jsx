@@ -1,6 +1,8 @@
-import Logo from '../../assets/images.png';
-import { FaInstagram, FaYoutube, FaUser, FaFacebook } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
+import Social1 from '../../assets/sm1.png';
+import Social2 from '../../assets/sm2.png';
+import Social3 from '../../assets/sm3.png';
 
 const Navbar = ({ tab = 'HOME' }) => {
   const navItems = ['HOME', 'CONTACT US', 'BLOG', 'PORTFOLIO'];
@@ -29,19 +31,19 @@ const Navbar = ({ tab = 'HOME' }) => {
         <div className="flex flex-row justify-end items-center gap-6 pr-14">
           <div className="flex flex-row justify-between items-center gap-5">
             <a href="https://www.facebook.com/TEECPL" target="_blank">
-              <FaFacebook className="text-[#1877f2] w-5 h-5" />
+              <img src={Social1} alt="Facebook" className="w-5 h-5" />
             </a>
             <a
               href="https://www.instagram.com/thirdeyeeducationalcenter/"
               target="_blank"
             >
-              <FaInstagram className="text-[#e1306c] w-5 h-5" />
+              <img src={Social2} alt="Instagram" className="w-5 h-5" />
             </a>
             <a
               href="https://www.youtube.com/@thirdeyeeducationalcenterp747"
               target="_blank"
             >
-              <FaYoutube className="text-[#ff0000] w-5 h-5" />
+              <img src={Social3} alt="Youtube" className="w-5 h-5" />
             </a>
           </div>
           <div className="text-[#dad2c7]">|</div>
