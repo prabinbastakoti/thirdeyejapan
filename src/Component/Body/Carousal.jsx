@@ -43,7 +43,7 @@ const Carousal = () => {
         {photos.map((photo, index) => {
           return (
             <div key={index} className="absolute inset-0">
-              <img src={photo} className="w-full object-cover" />
+              <img src={photo} className="w-full object-cover brightness-50" />
               <div className="absolute top-[35%] left-1/4 transform -translate-x-1/2 -translate-y-1/2  flex flex-col gap-4">
                 <div className="text-xs text-white tracking-[10px] font-extrabold">
                   {description[index].author}
@@ -72,7 +72,7 @@ const Carousal = () => {
                 <img
                   src={photo}
                   alt=""
-                  className="h-[300px] w-[200px] object-cover rounded-2xl"
+                  className="h-[300px] w-[200px] object-cover rounded-2xl brightness-75"
                 />
                 <div className="absolute text-white bottom-12 w-full text-center">
                   {description[index].title}

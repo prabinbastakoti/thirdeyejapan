@@ -24,7 +24,9 @@ const Body = () => {
         <Gallery />
         <div className="px-20 pb-10">
           <SiteContent />
-          <Social />
+        </div>
+        <Social />
+        <div className="px-20 pb-10">
           <Instructors />
           <ContactUs />
           <Footer />

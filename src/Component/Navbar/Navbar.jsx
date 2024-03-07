@@ -8,7 +8,7 @@ const Navbar = ({ tab = 'HOME' }) => {
   const navItems = ['HOME', 'CONTACT US', 'BLOG', 'PORTFOLIO'];
   return (
     <>
-      <div className="w-[100%] hidden py-4 md:flex justify-between items-center relative z-10 bg-[#15104d] bg-opacity-25">
+      <div className="w-[100%] hidden py-4 md:flex justify-between items-center relative z-10 bg-[#15104d] bg-opacity-30">
         <div className="text-xl text-white font-extrabold tracking-wider pl-5">
           THIRDEYEJAPAN
         </div>
