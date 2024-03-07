@@ -7,6 +7,7 @@ import Social from './Social';
 import Instructors from './Instructors';
 import ContactUs from './ContactUs/ContactUs';
 import Carousal from './Carousal';
+import Footer from './Footer';
 
 const Body = () => {
   return (
@@ -21,11 +22,12 @@ const Body = () => {
           <FAQs />
         </div>
         <Gallery />
-        <div className="px-20">
+        <div className="px-20 pb-10">
           <SiteContent />
           <Social />
           <Instructors />
           <ContactUs />
+          <Footer />
         </div>
       </div>
     </>
