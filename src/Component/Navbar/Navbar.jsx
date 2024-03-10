@@ -19,7 +19,7 @@ const Navbar = ({ tab = 'HOME' }) => {
   console.log(open);
   return (
     <>
-      <div className="w-full px-4 py-3 md:py-4 flex justify-between items-center relative z-10 bg-[#15104d] bg-opacity-30">
+      <div className="w-full px-4 py-3 md:py-4 flex justify-between items-center relative z-10 bg-[#15104d] bg-opacity-50">
         <div className="text-base md:text-xl text-white font-extrabold tracking-wider pl-2 md:pl-5">
           THIRDEYEJAPAN
         </div>
