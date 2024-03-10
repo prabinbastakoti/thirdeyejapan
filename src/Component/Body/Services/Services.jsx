@@ -26,7 +26,7 @@ const Services = () => {
   return (
     <>
       <HeadingTitle title="services" />
-      <div className="flex flex-col justify-center items-center mt-16">
+      <div className="flex flex-col justify-center items-center mt-16 gap-8 md:gap-0">
         <SingleService
           image={Service1}
           heading={content[0].heading}

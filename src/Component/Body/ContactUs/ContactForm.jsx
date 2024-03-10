@@ -23,7 +23,7 @@ const ContactUsForm = ({ setModal }) => {
     <div className="w-full mt-14 mb-24">
       <form className="w-4/5 mx-auto" onSubmit={submitForm}>
         <h1 className="text-center text-2xl mb-6">Drop us a line!</h1>
-        <div className="w-3/5 mx-auto flex flex-col gap-6">
+        <div className="md:w-3/5 mx-auto flex flex-col gap-6">
           <div className="relative">
             <input
               type="text"
@@ -73,7 +73,7 @@ const ContactUsForm = ({ setModal }) => {
           <div className="flex flex-row justify-center items-center gap-8">
             <button
               type="submit"
-              className="bg-[#15104d] px-6 py-2 font-medium tracking-widest border-b-8 border-[#0f0c31] text-white text-lg"
+              className="bg-[#15104d] px-6 py-2 font-medium tracking-widest border-b-8 border-[#0f0c31] text-white text-base md:text-lg"
               onClick={submitForm}
             >
               SEND
@@ -81,7 +81,7 @@ const ContactUsForm = ({ setModal }) => {
             <button
               type="button"
               onClick={() => setModal(false)}
-              className="border-b-2 border-[#dad2c7] text-lg"
+              className="border-b-2 border-[#dad2c7] text-base md:text-lg"
             >
               Cancel
             </button>

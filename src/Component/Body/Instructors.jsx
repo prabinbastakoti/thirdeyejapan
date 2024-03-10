@@ -49,7 +49,7 @@ const Instructors = () => {
     <>
       <div>
         <HeadingTitle title="Our instructors" />
-        <div className="flex flex-row justify-center items-center text-center mt-16 gap-12 px-20">
+        <div className="flex flex-col md:flex-row justify-center items-center text-center mt-16 gap-12 px-20">
           {InstructorDetails.map((instructor, index) => {
             return (
               <div

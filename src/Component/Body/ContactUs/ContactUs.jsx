@@ -27,19 +27,21 @@ const ContactUs = () => {
         <HeadingTitle title="contact us" />
         {!modal && (
           <div className="pb-10">
-            <h1 className="text-2xl text-center mt-12 pb-5 border-b">
+            <h1 className="text-xl md:text-2xl text-center mt-12 pb-5 border-b">
               Better yet, see us in person!
             </h1>
-            <p className="text-lg text-center text-[#5e5e5e] mt-6 mb-6">
+            <p className="text-base md:text-lg text-center text-[#5e5e5e] mt-6 mb-6">
               We love our customers, so feel free to visit during normal
               business hours.
             </p>
-            <h1 className="text-2xl text-center mt-12 pb-5 border-b">
+            <h1 className="text-xl md:text-2xl text-center mt-12 pb-5 border-b">
               Third Eye Japan
             </h1>
             <div className=" pb-5 border-b">
-              <h1 className="text-2xl text-center mt-10 mb-5">Hours</h1>
-              <div className="flex flex-row justify-center items-center text-lg text-[#5e5e5e] gap-4">
+              <h1 className="text-xl md:text-2xl text-center mt-10 mb-5">
+                Hours
+              </h1>
+              <div className="flex flex-row justify-center items-center text-base md:text-lg text-[#5e5e5e] gap-4">
                 {!openAll ? (
                   <>
                     {today == 0 || today == 6 ? (
@@ -95,7 +97,7 @@ const ContactUs = () => {
             </div>
             <div className="flex flex-row justify-center mt-10 pb-10 border-b">
               <button
-                className="bg-[#15104d] px-12 py-6 text-xl font-medium tracking-widest border-b-8 border-[#0f0c31] text-white"
+                className="bg-[#15104d] px-8 py-4 md:px-12 md:py-6 text-base md:text-xl font-medium tracking-widest border-b-8 border-[#0f0c31] text-white"
                 onClick={() => setModal(!modal)}
               >
                 DROP US A LINE!
