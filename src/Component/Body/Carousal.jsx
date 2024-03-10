@@ -54,6 +54,7 @@ const Carousal = () => {
               style={{
                 backgroundImage: `url(${photo})`,
                 backgroundSize: 'cover',
+                backgroundPosition: 'center',
               }}
             ></div>
           );
