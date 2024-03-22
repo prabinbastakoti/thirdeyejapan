@@ -16,7 +16,6 @@ const Navbar = ({ tab = 'HOME' }) => {
     setOpen(!open);
   };
 
-  console.log(open);
   return (
     <>
       <div className="w-full px-4 py-3 md:py-4 flex justify-between items-center relative z-10 bg-[#15104d] bg-opacity-50">

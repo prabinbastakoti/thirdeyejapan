@@ -14,7 +14,7 @@ const Body = () => {
     <>
       <Carousal />
       <div className="">
-        <div className="px-20 mb-28">
+        <div className="px-20 my-28">
           <Services />
         </div>
         <AboutUs />
