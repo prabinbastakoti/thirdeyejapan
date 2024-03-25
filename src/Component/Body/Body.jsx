@@ -35,19 +35,19 @@ const Body = () => {
     <>
       <Carousal data={data} />
       <div className="">
-        <div className="px-20 my-28">
+        <div className="px-4 md:px-20 md:my-28 mt-10 mb-28">
           <Services data={data} />
         </div>
         <AboutUs data={data} />
-        <div className="px-20 mb-28">
+        <div className="px-4 md:px-20 mb-28">
           <FAQs data={data} />
         </div>
         <Gallery data={data} />
-        <div className="px-20 pb-10">
+        <div className="px-4 md:px-20 pb-10">
           <SiteContent data={data} />
         </div>
         <Social data={data} />
-        <div className="px-20 pb-10">
+        <div className="px-4 md:px-20 pb-10">
           <Instructors data={data} />
           <ContactUs data={data} />
           <Footer data={data} />

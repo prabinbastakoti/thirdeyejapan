@@ -68,7 +68,7 @@ const Navbar = ({ tab = 'HOME' }) => {
         />
         <div
           className={`md:hidden absolute top-0 transition-all ${
-            open ? 'right-0' : '-right-[50%]'
+            open ? 'right-0' : '-right-[50%] hidden'
           } w-1/2 h-[100vh] bg-black flex flex-col justify-center
         items-center gap-6`}
         >
