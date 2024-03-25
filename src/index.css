@@ -28,8 +28,10 @@ textarea {
 
 .container {
   position: relative;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
+  min-width: 100vw;
   height: 100vh;
   background: #f5f5f5;
   box-shadow: 0 30px 50px #dbdbdb;
@@ -43,10 +45,8 @@ textarea {
   transform: translate(0, -50%);
   border-radius: 20px;
   box-shadow: 0 30px 50px #505050;
-  background-position: 50% 50%;
-  background-size: cover;
-  display: inline-block;
   transition: 0.5s;
+  object-fit: cover;
 }
 
 .slide .item:nth-child(1),
@@ -56,22 +56,22 @@ textarea {
   transform: translate(0, 0);
   border-radius: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
 }
 
 .slide .item:nth-child(3) {
-  left: 70%;
+  left: 60%;
 }
 .slide .item:nth-child(4) {
-  left: calc(70% + 220px);
+  left: calc(60% + 220px);
 }
 .slide .item:nth-child(5) {
-  left: calc(70% + 440px);
+  left: calc(60% + 440px);
 }
 
 /* here n = 0, 1, 2, 3,... */
 .slide .item:nth-child(n + 6) {
-  left: calc(70% + 660px);
+  left: calc(60% + 660px);
   opacity: 0;
 }
 

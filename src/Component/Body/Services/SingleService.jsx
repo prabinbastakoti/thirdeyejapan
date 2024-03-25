@@ -1,3 +1,5 @@
+const baseUrl = import.meta.env.VITE_ROOT_URL;
+
 const SingleService = ({ id, image, heading, paragraph }) => {
   return (
     <>
@@ -7,7 +9,7 @@ const SingleService = ({ id, image, heading, paragraph }) => {
         } justify-between items-center mb-16 gap-8 md:gap-16`}
       >
         <img
-          src={image}
+          src={`${baseUrl}${image}`}
           alt="Service1"
           className="shadow-lg md:w-[650px] md:h-[400px] object-cover w-11/12"
         />

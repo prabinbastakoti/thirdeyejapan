@@ -8,28 +8,49 @@ import Instructors from './Instructors';
 import ContactUs from './ContactUs/ContactUs';
 import Carousal from './Carousal';
 import Footer from './Footer';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const Body = () => {
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    const apiResponse = axios.get(
+      'https://d-web-web.onrender.com/api/menu/65fd1778b32d92184b5ecfae'
+    );
+
+    apiResponse.then((response) => {
+      setData(response.data.data[0]);
+    });
+    apiResponse.catch((error) => {
+      console.log(error);
+    });
+  }, []);
+
+  if (Object.keys(data).length < 1) {
+    return <div>Loading.........</div>;
+  }
+
   return (
     <>
-      <Carousal />
+      <Carousal data={data} />
       <div className="">
         <div className="px-20 my-28">
-          <Services />
+          <Services data={data} />
         </div>
-        <AboutUs />
+        <AboutUs data={data} />
         <div className="px-20 mb-28">
-          <FAQs />
+          <FAQs data={data} />
         </div>
-        <Gallery />
+        <Gallery data={data} />
         <div className="px-20 pb-10">
-          <SiteContent />
+          <SiteContent data={data} />
         </div>
-        <Social />
+        <Social data={data} />
         <div className="px-20 pb-10">
-          <Instructors />
-          <ContactUs />
-          <Footer />
+          <Instructors data={data} />
+          <ContactUs data={data} />
+          <Footer data={data} />
         </div>
       </div>
     </>

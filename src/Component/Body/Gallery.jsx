@@ -1,20 +1,16 @@
-import Image1 from '../../assets/1.webp';
-import Image2 from '../../assets/2.webp';
-import Image3 from '../../assets/3.webp';
-import Image4 from '../../assets/4.webp';
-import Image5 from '../../assets/5.webp';
-import Image6 from '../../assets/6.webp';
+const baseUrl = import.meta.env.VITE_ROOT_URL;
 
-const Gallery = () => {
-  const photos = [Image1, Image2, Image3, Image4, Image5, Image6];
+const Gallery = ({ data }) => {
+  let photos = data.contents.filter((item) => item.pageLocation === 'gallary');
+
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 px-10">
-        {photos.map((photo, index) => {
+        {photos[0].imagePath.map((photo, index) => {
           return (
             <div className="overflow-hidden" key={index}>
               <img
-                src={photo}
+                src={`${baseUrl}${photo}`}
                 alt={photo}
                 className="hover:scale-110 transition duration-500"
               />
